@@ -1,4 +1,4 @@
-# Magic 2026 Web Converter
+Simple Script for  Magic 2026 Web DVF Config -> Access .Json converter.
 
 ## Behavior
 
