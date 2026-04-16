@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magic JSON Converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <main class="shell">
+      <section class="card">
+        <h1>Magic 2026 Converter</h1>
+        <p class="sub">Upload workbook + SysCAD txt. Template is loaded automatically.</p>
+
+        <div class="field">
+          <label for="workbookFile">Excel workbook (.xlsm)</label>
+          <input id="workbookFile" type="file" accept=".xlsm,.xlsx" />
+        </div>
+
+        <div class="field">
+          <label for="syscadFile">SysCAD text file (.txt)</label>
+          <input id="syscadFile" type="file" accept=".txt" />
+        </div>
+
+        <div class="field inline">
+          <label for="templateFile">Optional template override</label>
+          <input id="templateFile" type="file" accept=".json" />
+        </div>
+
+        <button id="convertBtn" type="button">Convert And Download JSON</button>
+
+        <pre id="log" class="log" aria-live="polite"></pre>
+      </section>
+    </main>
+  </body>
+</html>
